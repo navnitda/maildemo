@@ -975,7 +975,7 @@ nav {
 }
 
 .text-center {
-    text-align: center;
+    text-align: justify;
 }
 
 .row {
@@ -1422,15 +1422,9 @@ nav {
 
 @media (max-width: 991px) and (min-width:300px) {
     #flex-container .card {
-        background: #fff;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, .25);
-        border-radius: 20px;
-        height: auto !important;
-        width: 90%;
-        margin-left: 25px;
+        margin-left: 15px;
         margin-right: 10px;
         align-items: center;
-        background-color: #ececec;
     }
 
     #flex-container .cardtext {
@@ -1448,6 +1442,9 @@ nav {
         margin-left: 40px;
         margin-right: 40px;
     }
+    .accordion-body p {
+        font-size: 14px;
+    }
 /*--------MEDIA QUERIES FOR DATA SCIENCE--------*/
 
     #data-science {
@@ -1464,16 +1461,19 @@ nav {
         color: white;
         font-size: 2rem;
         padding-top: 8vh;
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     #pg-ds h3 {
         font-size: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #pg-ds p {
         padding-left: 40px;
         padding-right: 40px;
+        font-size: 14px;
 
     }
 /*--------MEDIA QUERIES FOR CYBERSECURITY--------*/
@@ -1489,119 +1489,108 @@ nav {
     }
 
     #cyber-sec h1 {
-        color: white;
         font-size: 2rem;
         padding-top: 8vh;
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     #pg-cs h3 {
+        padding-right: 50px;
+        padding-left: 20px; 
         font-size: 18px;
     }
 
     #pg-cs p {
         padding-left: 40px;
         padding-right: 40px;
-
+        font-size: 14px;
     }
 /*--------MEDIA QUERIES FOR ADDITIVE MANUFACTURING--------*/
 
     #add-manu {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/3Dprint-wall.jpg);
-        /* height: 70vh; */
-        background-size: cover;
-        background-position: center;
-        position: relative;
         height: 20vh;
-        display: flex;
     }
 
     #add-manu h1 {
-        color: white;
         font-size: 2rem;
-        padding-top: 6vh;
-        word-wrap: break-word;
-        padding-right: 60px;
-        padding-left: 40px;
+        padding-top: 8vh;
+        padding-left: 20px;
     }
 
     #pg-am h3 {
-        text-align: center;
-        padding-top: 50px;
-        word-wrap: break-word;
         padding-right: 50px;
-        padding-left: 20px;
+        padding-left: 20px; 
         font-size: 18px;
     }
 
     #pg-am p {
         padding-left: 40px;
         padding-right: 40px;
-
+        font-size: 14px;
     }
 /*--------MEDIA QUERIES FOR EMBEDDED SYSTEMS--------*/
 
     #iot {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Embedded-Wall.jpg);
-        /* height: 70vh; */
-        background-size: cover;
-        background-position: center;
-        position: relative;
         height: 20vh;
-        display: flex;
     }
 
     #iot h1 {
-        color: white;
         font-size: 2rem;
-        padding-top: 6vh;
-        word-wrap: break-word;
-        padding-right: 100px;
-        padding-left: 40px;
+        padding-top: 8vh;
+        padding-left: 20px;
     }
 
     #pg-iot h3 {
-        text-align: center;
-        padding-top: 50px;
         word-wrap: break-word;
-        padding-right: 30px;
+        padding-right: 50px;
         padding-left: 20px;
+        font-size: 18px;
+
     }
     #pg-iot p {
         padding-left: 40px;
-        padding-right: 40px;}
+        padding-right: 40px;
+        font-size: 14px;
+
+    }
 
 /*--------MEDIA QUERIES FOR INVESTMENT BANKING--------*/
-#pg-ib h3{
-        text-align: center;
-        padding-top: 50px;
+    #banking-sec {
+        height: 20vh;
+    }
+
+    #banking-sec h1 {
+        font-size: 2rem;
+        padding-top: 8vh;
+        padding-left: 20px;
+    }
+
+    #pg-ib h3{
         word-wrap: break-word;
         padding-right: 30px;
         padding-left: 20px;
+        font-size: 18px;
 }
+    #pg-ib p{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 14px;
+    }
 
 /*--------MEDIA QUERIES FOR DIGITAL MARKETING--------*/
 
 #digitalmktg-sec {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Cyber-wall.jpg);
-    /* height: 70vh; */
-    background-size: cover;
-    background-position: center;
-    position: relative;
     height: 20vh;
-    display: flex;
 }
 
 #digitalmktg-sec h1 {
-    color: white;
     font-size: 2rem;
     padding-top: 8vh;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 #pg-dm h3 {
-        text-align: center;
-        padding-top: 190px;
+        padding-top: 120px;
         word-wrap: break-word;
         padding-right: 30px;
         padding-left: 20px;
@@ -1614,36 +1603,27 @@ nav {
 /*------------IISM SPORTS---------*/
 
 #iism-sec {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/iism-sports.jpg);
-    /* height: 70vh; */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 20vh;
-    display: flex;
+    height: 30vh;
 }
 
-#iism h1 {
-    color: white;
+#iism-sec h1 {
     font-size: 2rem;
-    padding-top: 6vh;
-    word-wrap: break-word;
+    padding-top: 10vh;
     padding-right: 100px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 #ug-sm h3 {
-    text-align: center;
-    padding-top: 50px;
+    padding-top: 120px;
     word-wrap: break-word;
     padding-right: 30px;
     padding-left: 20px;
-    font-size: 24px;
 }
 #ug-sm p {
     padding-left: 40px;
-    padding-right: 40px;}
-
+    padding-right: 40px;
+    font-size: 14px;
+}
 
 }    
 /*--------ABOUT US PAGE---------*/
