@@ -565,9 +565,6 @@ nav {
 .contact-in-input::placeholder {
     color: #fff;
 }
-.contact-in .form-label{
-    color: #fff;
-}
 .contact-in-textarea {
     width: 100%;
     height: 140px;
