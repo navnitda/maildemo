@@ -1599,6 +1599,18 @@ nav {
     padding-left: 40px;
 }
 
+#pg-dm h3 {
+        text-align: center;
+        padding-top: 120px;
+        word-wrap: break-word;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+    #pg-dm p {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 14px;
+    }
 /*------------IISM SPORTS---------*/
 
 #iism-sec {
