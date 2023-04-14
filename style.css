@@ -2246,3 +2246,44 @@ nav {
 }
 
 /*--------END OF OUR SERVICES PAGE---------*/
+
+#success{
+    background: linear-gradient(360deg, #004AAD, #5692E2);
+    height: 45vh;
+}
+#success .logo img{
+    width: 240px;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-left: 575px;
+    vertical-align: auto;
+}
+#success .success-text h1{
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+#success .success-text p{
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+
+}
+
+#success.btn {
+    margin-bottom: 5%;
+    width: 150px;
+    
+}
+
+#success .button-success {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-weight: 800;
+    font-size: medium;
+    margin-left: 650px;
+}
+
+#success .btn:hover {
+    background-color: red;
+}
