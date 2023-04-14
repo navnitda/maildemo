@@ -509,6 +509,7 @@ nav {
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .contact-in ul {
@@ -1731,6 +1732,7 @@ nav {
 
 .two-column p {
     padding: 22px;
+    text-align: justify;
 
 }
 
@@ -1818,6 +1820,8 @@ nav {
     }
     .padded-boxes p{
         font-size: 14px;
+        margin-left: 10px;
+        margin-right: 20px;
     }
 
 }
@@ -1975,6 +1979,7 @@ nav {
 @media only screen and (max-width:480px) {
     .contacts:nth-child(1) {
         flex: 50%;
+        color: #fff;
     }
 
     .contacts:nth-child(2) {
