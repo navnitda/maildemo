@@ -2268,11 +2268,11 @@ nav {
 }
 .success-text{
 background-color: #001b33;
-    height: 45vh;
+    height: 70vh;
 }
 .success-text h1{
     text-align: center;
-    padding-top: 90px;
+    padding-top: 15%;
     color: #fff;
 }
 .success-text p{
@@ -2290,7 +2290,7 @@ background-color: #001b33;
 
 .success-text .button-success {
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 10%;
     font-weight: 800;
     font-size: medium;
     margin-left: 650px;
