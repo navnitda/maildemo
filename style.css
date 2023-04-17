@@ -2287,3 +2287,93 @@ nav {
 #success .btn:hover {
     background-color: red;
 }
+
+
+/*----LANDING PAGE----*/
+.landing{
+    text-align: center;
+    padding-top: 20px;
+}
+.landing h1{
+    font-size: 1.8rem;
+
+}
+.landing-content{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.landing-content .landing-left{
+    width:50%;
+    padding: 30px 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .25);
+    border-radius: 20px;
+    margin: 20px;
+    flex: 1;
+}
+
+.landing-content .landing-right{
+    width:50%;
+    padding: 50px 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
+    border-radius: 20px;
+    margin: 20px;
+    flex: 1;
+
+}
+.landing-content .landing-right h2{
+    font-size: 1.4rem;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.landing-content .landing-right p{
+    font-size: 1rem;
+    text-align: justify;
+    padding: 10px 20px
+}
+.landing-content .landing-right .button-register{
+    padding-top: 15vh;
+}
+
+.landing-left img{
+    max-width: 100%;
+   
+}
+#register-now{
+    background-color: #001b33;
+    padding: 20px 100px;
+}
+.register-in h1{
+    color: #fff;
+}
+.register-in .form-check-label{
+    color: #fff;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.register-in p{
+    color: #fff;
+}
+
+.register-in .submit-btn{
+    width: 120px;
+}
+.register-in .register-in-btn:hover{
+background-color: red;}
+
+html { scroll-behavior: smooth;}
+
+@media only screen and (max-width:991px) {
+.landing-content{
+    width: 100%;
+    display: flex;
+        flex-direction: column;
+}
+.landing-content .landing-left{
+    width: auto;
+}
+.landing-content .landing-right{
+    width: auto;
+}
+}
