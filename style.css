@@ -2248,35 +2248,47 @@ nav {
 /*--------END OF OUR SERVICES PAGE---------*/
 
 #success{
-    background: linear-gradient(360deg, #004AAD, #5692E2);
-    height: 45vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 12 0px;
+    background: linear-gradient(90deg, #004AAD, #5692E2);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+    
 }
 #success .logo img{
     width: 240px;
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 10px;
     margin-left: 575px;
     vertical-align: auto;
 }
-#success .success-text h1{
+.success-text{
+background-color: #001b33;
+    height: 45vh;
+}
+.success-text h1{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 90px;
     color: #fff;
 }
-#success .success-text p{
+.success-text p{
     text-align: center;
     padding-top: 10px;
     color: #fff;
 
 }
 
-#success.btn {
-    margin-bottom: 5%;
+.success-text .btn {
+    margin-bottom: 10px;
     width: 150px;
     
 }
 
-#success .button-success {
+.success-text .button-success {
     padding-bottom: 20px;
     padding-top: 10px;
     font-weight: 800;
@@ -2284,7 +2296,7 @@ nav {
     margin-left: 650px;
 }
 
-#success .btn:hover {
+.success-text .btn:hover {
     background-color: red;
 }
 
