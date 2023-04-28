@@ -20,7 +20,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 1000;
-    height: 12 0px;
+    height: 12px 0;
     background: linear-gradient(90deg, #004AAD, #5692E2);
     box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
     justify-content: space-between;
@@ -105,6 +105,7 @@ nav {
 
 /*--------AHEAD------*/
 #ahead {
+    background-image: linear-gradient(rgba(0, 33, 79, 0.4), rgba(0, 0, 0, 0.4)), url(images/ahead.webp);
     background-image: linear-gradient(rgba(0, 33, 79, 0.4), rgba(0, 0, 0, 0.4)), url(images/ahead.jpg);
     box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
     background-size: cover;
@@ -209,6 +210,7 @@ nav {
     font-weight: 400;
 }
 
+
 @media (max-width: 991px) and (min-width:300px) {
     .carousel-caption h1 {
         color: white;
@@ -228,6 +230,7 @@ nav {
 
 /*-------Services in Home Page----*/
 #services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Services.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Services.png);
     background-size: cover;
     background-position: center;
@@ -339,6 +342,7 @@ nav {
     height: auto;
     min-height: 85vh;
     width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/testimonial.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/testimonial.jpg);
     overflow: hidden;
     padding-top: 50px;
@@ -465,6 +469,7 @@ nav {
 
 .contact-in:nth-child(1) {
     flex: 30%;
+    background-image: url(images/contact.webp);
     background-image: url(images/contact.jpg);
     color: #fff;
 }
@@ -860,6 +865,7 @@ nav {
 /*-------Program Listing----*/
 
 #services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Services.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Services.png);
     background-size: cover;
     background-position: center;
@@ -1030,6 +1036,7 @@ nav {
 
 /*----------DS HEADER-----*/
 #data-science {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/ds-wall.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/ds-wall.jpg);
     background-size: cover;
     background-position: center;
@@ -1097,6 +1104,7 @@ nav {
 
 
 #cyber-sec {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Cyber-wall.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Cyber-wall.jpg);
     background-size: cover;
     background-position: center;
@@ -1144,6 +1152,7 @@ nav {
 /*-----Additive Manufacturing------*/
 
 #add-manu {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/3Dprint-wall.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/3Dprint-wall.jpg);
     background-size: cover;
     background-position: center;
@@ -1191,6 +1200,7 @@ nav {
 /*-----IOT------*/
 
 #iot {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Embedded-Wall.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Embedded-Wall.jpg);
     background-size: cover;
     background-position: center;
@@ -1237,7 +1247,8 @@ nav {
 
 
 #banking-sec {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Investment\ Banking.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/investment-banking.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/investment-wall.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1284,6 +1295,7 @@ nav {
 
 
 #fullstack-sec {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/fullstack-wallpaper.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/fullstack-wallpaper.jpg);
     background-size: cover;
     background-position: center;
@@ -1331,7 +1343,7 @@ nav {
 
 
 #digitalmktg-sec {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/digitalmtkg-wallpaper.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/digitalmtkg-wallpaper.webp);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1380,7 +1392,7 @@ nav {
 
 
 #iism-sec {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/iism-sports.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/iism-sports.webp);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1424,7 +1436,7 @@ nav {
 
 /*-----SPORTS SCIENCE------*/
 #bss-sec {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/bss-iism.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/bss-iism.webp);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1497,7 +1509,7 @@ nav {
 /*--------MEDIA QUERIES FOR DATA SCIENCE--------*/
 
     #data-science {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/ds-wall.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/ds-wall.webp);
         /* height: 70vh; */
         background-size: cover;
         background-position: center;
@@ -1528,7 +1540,7 @@ nav {
 /*--------MEDIA QUERIES FOR CYBERSECURITY--------*/
 
     #cyber-sec {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Cyber-wall.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Cyber-wall.webp);
         /* height: 70vh; */
         background-size: cover;
         background-position: center;
@@ -1915,7 +1927,7 @@ nav {
 
 .contacts:nth-child(1) {
     flex: 35%;
-    background-image: url(images/contact.jpg);
+    background-image: url(images/contact.webp);
     color: #fff;
 }
 
@@ -2100,7 +2112,7 @@ nav {
     background: black;
     display: block;
     height: 3px;
-    width: 240px;
+    width: 390px;
     margin: 10px auto 5px
 }
 
@@ -2154,7 +2166,7 @@ nav {
 }
 
 .service-wrap:hover {
-    background-image: linear-gradient(rgba(0, 33, 79, 0.4), rgba(0, 0, 0, 0.4)), url(images/salestraining.jpg);
+    background-image: linear-gradient(rgba(0, 33, 79, 0.4), rgba(0, 0, 0, 0.4)), url(images/salestraining.webp);
     background-size: cover;
     background-position: center center;
     background-attachment: local;
@@ -2205,7 +2217,7 @@ nav {
 }
 
 .service-wrap:hover {
-    background-image: linear-gradient(rgba(0, 33, 79, 0.4), rgba(0, 0, 0, 0.4)), url(images/salestraining.jpg);
+    background-image: linear-gradient(rgba(0, 33, 79, 0.4), rgba(0, 0, 0, 0.4)), url(images/salestraining.webp);
     background-size: cover;
     background-position: center center;
     background-attachment: local;
@@ -2372,7 +2384,9 @@ background-color: #001b33;
     width: 120px;
 }
 .register-in .register-in-btn:hover{
-background-color: red;}
+background-color: red;
+color: #fff;
+}
 
 html { scroll-behavior: smooth;}
 
