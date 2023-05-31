@@ -4,6 +4,7 @@ body {
     width: auto;
     height: auto;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 /*-------Navigation Bar---------*/
@@ -27,78 +28,90 @@ nav {
 }
 
 .navbar ul {
-    list-style: none;
+    
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
 }
-
+ 
 .navbar ul li {
+    list-style: none;
     position: relative;
     float: left;
+    padding-top: 40px;
+    transition: 0.5s;
+    box-sizing: border-box;
+    /* border-right: 1px solid rgba(255,255,255,.2); */
 }
-
+.navbar ul li :last-child{
+    border-right: none;
+}
 .navbar ul li a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
     font-weight: 600;
     display: block;
-    padding: 20px;
+    padding-left: 40px;
     text-transform: uppercase;
 }
-
+/* .navbar ul li a :last-child{
+    padding-bottom: 10px;
+} */
 .navbar ul li a:hover {
-    /* background: #063247; */
     color: red;
 }
 
-.navbar ul li ul {
+.navbar ul li ul{
+    width: 280px;
     position: absolute;
-    left: 0;
-    width: 300px;
-    background: linear-gradient(90deg, #004AAD, #5692E2);
+    background: #004AAD;
+    top: 84px;
+    padding-left: 0;
+    display: block;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: scroll;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
     box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
-    display: none;
+}
+.navbar ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.navbar ul li ul li{
+    border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
-.navbar ul li ul li {
-    width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+@media(max-width: 985px){
+  
+.navbar ul{
+    display: flex;
+}  
+.navbar ul li{
+    display: flex;
+}
+.navbar ul li ul{
+    width: 280px;
+    z-index: 999;
+}
+.navbar ul li ul li{
+    border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
-.navbar ul li ul li ul {
-    left: 200px;
-    top: 0;
+.navbar ul li ul li a{
+    font-size: 1rem;
+    padding-right: 20px;
+    margin-top: 0;
 }
-
-.navbar ul li:focus-within>ul,
-.navbar ul li:hover>ul {
-    display: initial;
-    margin-top: 30px;
+.navbar ul li :last-child{
+    padding-bottom: 10px;
+    border-bottom: none;
 }
-
-
-@media(max-width:991px) and (min-width:300px) {
-    .navbar {
-        padding: 10px
-    }
-
-    .navbar ul li {
-        width: 100%;
-    }
-
-    .navbar ul li ul {
-        position: relative;
-        padding: 0 0;
-        width: 100%
-    }
-
-    .navbar ul li ul li {
-        background: linear-gradient(90deg, #004AAD, #5692E2);
-        width: 100%;
-        left: 0;
-        padding-left: 40px;
-        text-align: left;
-    }
-}
+} 
 
 /*-------End Navigation Bar---------*/
 
@@ -106,7 +119,6 @@ nav {
 /*--------AHEAD------*/
 #ahead {
     background-image: linear-gradient(rgba(0, 33, 79, 0.4), rgba(0, 0, 0, 0.4)), url(images/ahead.webp);
-    background-image: linear-gradient(rgba(0, 33, 79, 0.4), rgba(0, 0, 0, 0.4)), url(images/ahead.jpg);
     box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
     background-size: cover;
     background-position: center;
@@ -212,6 +224,9 @@ nav {
 
 
 @media (max-width: 991px) and (min-width:300px) {
+    #slider{
+        height: auto;
+    }
     .carousel-caption h1 {
         color: white;
         font-size: 30px;
@@ -231,7 +246,6 @@ nav {
 /*-------Services in Home Page----*/
 #services {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Services.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Services.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -432,6 +446,10 @@ nav {
     font-size: 15px;
     opacity: 0.8;
 }
+.wrapper .container i{
+    color: #6aa6f4;
+    font-size: 26px;
+}
 
 .wrapper .container p::after {
     content: '';
@@ -465,12 +483,12 @@ nav {
 
 .contact-in {
     padding: 40px 30px;
+    color: #fff;
 }
 
 .contact-in:nth-child(1) {
     flex: 30%;
     background-image: url(images/contact.webp);
-    background-image: url(images/contact.jpg);
     color: #fff;
 }
 
@@ -495,7 +513,6 @@ nav {
 .contact-in h2 {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 15px;
 }
 
 .contact-in h2 i {
@@ -503,6 +520,7 @@ nav {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    margin-top: 15px;
     background: #f5f5f5;
     color: #000;
     border-radius: 50px;
@@ -512,9 +530,26 @@ nav {
 
 .contact-in p {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 20px;
     color: #fff;
+}
+
+.contact-in a {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-in a:hover {
+    color: red;
+}
+
+.contact-in h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .contact-in ul {
@@ -571,6 +606,7 @@ nav {
 .contact-in-input::placeholder {
     color: #fff;
 }
+
 .contact-in-textarea {
     width: 100%;
     height: 140px;
@@ -725,6 +761,11 @@ nav {
     text-decoration: none;
 }
 
+.footer-distributed .footer-center p a:hover {
+    color: red;
+
+}
+
 
 /*------FOOTER RIGHT------*/
 
@@ -866,7 +907,6 @@ nav {
 
 #services {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Services.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Services.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -964,6 +1004,10 @@ nav {
     transition: 0.7s;
 }
 
+#services p a:hover {
+    color: #fff;
+}
+
 /*------End of Program Listing------*/
 
 
@@ -1037,7 +1081,6 @@ nav {
 /*----------DS HEADER-----*/
 #data-science {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/ds-wall.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/ds-wall.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1105,7 +1148,6 @@ nav {
 
 #cyber-sec {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Cyber-wall.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Cyber-wall.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1153,7 +1195,6 @@ nav {
 
 #add-manu {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/3Dprint-wall.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/3Dprint-wall.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1201,7 +1242,6 @@ nav {
 
 #iot {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Embedded-Wall.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Embedded-Wall.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1247,8 +1287,7 @@ nav {
 
 
 #banking-sec {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/investment-banking.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/investment-wall.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/investment-wall.webp);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1296,7 +1335,6 @@ nav {
 
 #fullstack-sec {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/fullstack-wallpaper.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/fullstack-wallpaper.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1399,7 +1437,11 @@ nav {
     height: 40vh;
     display: flex;
 }
-
+.cardtext h3{
+color: #000;
+font-size: 1.2rem;
+font-weight: bold;
+}
 .go-back {
     text-align: right;
     padding-right: 20px;
@@ -1431,6 +1473,7 @@ nav {
     padding-right: 60px;
     font-weight: 500;
 }
+
 /*-----END OF SPORTS MANAGEMENT------*/
 
 
@@ -1475,6 +1518,7 @@ nav {
     padding-right: 60px;
     font-weight: 500;
 }
+
 /*-----END OF SPORTS SCIECNE------*/
 
 /*-----End of IISM------*/
@@ -1503,10 +1547,12 @@ nav {
         margin-left: 40px;
         margin-right: 40px;
     }
+
     .accordion-body p {
         font-size: 14px;
     }
-/*--------MEDIA QUERIES FOR DATA SCIENCE--------*/
+
+    /*--------MEDIA QUERIES FOR DATA SCIENCE--------*/
 
     #data-science {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/ds-wall.webp);
@@ -1537,7 +1583,8 @@ nav {
         font-size: 14px;
 
     }
-/*--------MEDIA QUERIES FOR CYBERSECURITY--------*/
+
+    /*--------MEDIA QUERIES FOR CYBERSECURITY--------*/
 
     #cyber-sec {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/Cyber-wall.webp);
@@ -1557,7 +1604,7 @@ nav {
 
     #pg-cs h3 {
         padding-right: 50px;
-        padding-left: 20px; 
+        padding-left: 20px;
         font-size: 18px;
     }
 
@@ -1566,7 +1613,8 @@ nav {
         padding-right: 40px;
         font-size: 14px;
     }
-/*--------MEDIA QUERIES FOR ADDITIVE MANUFACTURING--------*/
+
+    /*--------MEDIA QUERIES FOR ADDITIVE MANUFACTURING--------*/
 
     #add-manu {
         height: 20vh;
@@ -1580,7 +1628,7 @@ nav {
 
     #pg-am h3 {
         padding-right: 50px;
-        padding-left: 20px; 
+        padding-left: 20px;
         font-size: 18px;
     }
 
@@ -1589,7 +1637,8 @@ nav {
         padding-right: 40px;
         font-size: 14px;
     }
-/*--------MEDIA QUERIES FOR EMBEDDED SYSTEMS--------*/
+
+    /*--------MEDIA QUERIES FOR EMBEDDED SYSTEMS--------*/
 
     #iot {
         height: 20vh;
@@ -1608,6 +1657,7 @@ nav {
         font-size: 18px;
 
     }
+
     #pg-iot p {
         padding-left: 40px;
         padding-right: 40px;
@@ -1615,7 +1665,7 @@ nav {
 
     }
 
-/*--------MEDIA QUERIES FOR INVESTMENT BANKING--------*/
+    /*--------MEDIA QUERIES FOR INVESTMENT BANKING--------*/
     #banking-sec {
         height: 20vh;
     }
@@ -1626,92 +1676,98 @@ nav {
         padding-left: 20px;
     }
 
-    #pg-ib h3{
+    #pg-ib h3 {
         word-wrap: break-word;
         padding-right: 30px;
         padding-left: 20px;
         font-size: 18px;
-}
-    #pg-ib p{
+    }
+
+    #pg-ib p {
         padding-left: 40px;
         padding-right: 40px;
         font-size: 14px;
     }
 
-/*--------MEDIA QUERIES FOR DIGITAL MARKETING--------*/
+    /*--------MEDIA QUERIES FOR DIGITAL MARKETING--------*/
 
-#digitalmktg-sec {
-    height: 20vh;
-}
+    #digitalmktg-sec {
+        height: 20vh;
+    }
 
-#digitalmktg-sec h1 {
-    font-size: 2rem;
-    padding-top: 8vh;
-    padding-left: 20px;
-}
+    #digitalmktg-sec h1 {
+        font-size: 2rem;
+        padding-top: 8vh;
+        padding-left: 20px;
+    }
 
-#pg-dm h3 {
+    #pg-dm h3 {
         padding-top: 120px;
         word-wrap: break-word;
         padding-right: 30px;
         padding-left: 20px;
     }
+
     #pg-dm p {
         padding-left: 40px;
         padding-right: 40px;
         font-size: 14px;
     }
-/*------------IISM SPORTS MANAGEMENT---------*/
 
-#iism-sec {
-    height: 30vh;
+    /*------------IISM SPORTS MANAGEMENT---------*/
+
+    #iism-sec {
+        height: 30vh;
+    }
+
+    #iism-sec h1 {
+        font-size: 2rem;
+        padding-top: 10vh;
+        padding-right: 100px;
+        padding-left: 20px;
+    }
+
+    #ug-sm h3 {
+        padding-top: 120px;
+        word-wrap: break-word;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+
+    #ug-sm p {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 14px;
+    }
+
+    /*------------IISM SPORTS SCIENCE---------*/
+
+    #bss-sec {
+        height: 30vh;
+    }
+
+    #bss-sec h1 {
+        font-size: 2rem;
+        padding-top: 10vh;
+        padding-right: 100px;
+        padding-left: 20px;
+    }
+
+    #ug-ss h3 {
+        padding-top: 120px;
+        word-wrap: break-word;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+
+    #ug-ss p {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 14px;
+    }
+
 }
 
-#iism-sec h1 {
-    font-size: 2rem;
-    padding-top: 10vh;
-    padding-right: 100px;
-    padding-left: 20px;
-}
-
-#ug-sm h3 {
-    padding-top: 120px;
-    word-wrap: break-word;
-    padding-right: 30px;
-    padding-left: 20px;
-}
-#ug-sm p {
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 14px;
-}
-
-/*------------IISM SPORTS SCIENCE---------*/
-
-#bss-sec {
-    height: 30vh;
-}
-
-#bss-sec h1 {
-    font-size: 2rem;
-    padding-top: 10vh;
-    padding-right: 100px;
-    padding-left: 20px;
-}
-
-#ug-ss h3 {
-    padding-top: 120px;
-    word-wrap: break-word;
-    padding-right: 30px;
-    padding-left: 20px;
-}
-#ug-ss p {
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 14px;
-}
-
-}    
 /*--------ABOUT US PAGE---------*/
 
 
@@ -1847,7 +1903,8 @@ nav {
         justify-content: center;
         align-items: center;
     }
-    .two-column p{
+
+    .two-column p {
         font-size: 14px;
     }
 }
@@ -1903,197 +1960,14 @@ nav {
     .padded-boxes>* {
         width: calc((100% - 4rem) / 3);
     }
-    .padded-boxes p{
+
+    .padded-boxes p {
         font-size: 14px;
         margin-left: 10px;
         margin-right: 20px;
     }
 
 }
-
-/*------CONTACT US PAGE------*/
-
-.contact {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.contacts {
-    padding: 40px 30px;
-}
-
-.contacts:nth-child(1) {
-    flex: 35%;
-    background-image: url(images/contact.webp);
-    color: #fff;
-}
-
-.contacts:nth-child(2) {
-    flex: 55%;
-    background: #001b33;
-}
-
-.contacts:nth-child(3) {
-    flex: 85%;
-    padding: 0;
-    height: 60vh;
-}
-
-.contacts h1 {
-    font-size: 24px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.contacts h2 {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-.contacts h2 i {
-    font-size: 16px;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    background: #f5f5f5;
-    color: #000;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-}
-
-.contacts p {
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.contacts ul {
-    padding: 0;
-    margin: 0;
-}
-
-.contacts ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 5px;
-    margin-top: 5px;
-}
-
-.contacts ul li a {
-    display: block;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: #fff;
-    border-radius: 50px;
-}
-
-.contacts ul li a i {
-    font-size: 14px;
-    line-height: 30px;
-    color: #000;
-}
-
-.contacts form {
-    width: 100%;
-    height: auto;
-}
-
-.contact-input {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 20px;
-    border: 1px solid #fff;
-    outline: none;
-    padding-left: 5px;
-    background: transparent;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contact-input::placeholder {
-    color: #fff;
-}
-
-.contact-textarea {
-    width: 100%;
-    height: 140px;
-    margin-bottom: 20px;
-    border: 1px solid #fff;
-    outline: none;
-    padding-top: 5px;
-    padding-left: 5px;
-    background: transparent;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contact-textarea::placeholder {
-    color: #fff;
-}
-
-.contact-btn {
-    width: 100%;
-    height: 40px;
-    border: 1px solid #fff;
-    outline: none;
-    background: transparent;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-}
-
-.contacts iframe {
-    width: 100%;
-    height: 100%;
-}
-
-@media only screen and (max-width:480px) {
-    .contacts:nth-child(1) {
-        flex: 50%;
-        color: #fff;
-    }
-
-    .contacts:nth-child(2) {
-        flex: 50%;
-    }
-
-    .contacts:nth-child(3) {
-        flex: 100%;
-    }
-
-}
-
-@media only screen and (max-width:360px) {
-    .contact-in:nth-child(1) {
-        flex: 50%;
-    }
-
-    .contact-in:nth-child(2) {
-        flex: 50%;
-    }
-
-    .contact-in:nth-child(3) {
-        flex: 100%;
-    }
-
-}
-
-/*------END OF CONTACT US PAGE------*/
-
 
 /*--------OUR SERVICES PAGE---------*/
 .service-grid {
@@ -2259,7 +2133,7 @@ nav {
 
 /*--------END OF OUR SERVICES PAGE---------*/
 
-#success{
+#success {
     position: sticky;
     top: 0;
     left: 0;
@@ -2268,9 +2142,10 @@ nav {
     height: 12 0px;
     background: linear-gradient(90deg, #004AAD, #5692E2);
     box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
-    
+
 }
-#success .logo img{
+
+#success .logo img {
     width: 240px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -2278,16 +2153,19 @@ nav {
     margin-left: 575px;
     vertical-align: auto;
 }
-.success-text{
-background-color: #001b33;
+
+.success-text {
+    background-color: #001b33;
     height: 70vh;
 }
-.success-text h1{
+
+.success-text h1 {
     text-align: center;
     padding-top: 15%;
     color: #fff;
 }
-.success-text p{
+
+.success-text p {
     text-align: center;
     padding-top: 10px;
     color: #fff;
@@ -2297,7 +2175,7 @@ background-color: #001b33;
 .success-text .btn {
     margin-bottom: 10px;
     width: 150px;
-    
+
 }
 
 .success-text .button-success {
@@ -2314,22 +2192,25 @@ background-color: #001b33;
 
 
 /*----LANDING PAGE----*/
-.landing{
+.landing {
     text-align: center;
     padding-top: 20px;
 }
-.landing h1{
+
+.landing h1 {
     font-size: 1.8rem;
 
 }
-.landing-content{
+
+.landing-content {
     display: flex;
     width: 100%;
     box-sizing: border-box;
 
 }
-.landing-content .landing-left{
-    width:50%;
+
+.landing-content .landing-left {
+    width: 50%;
     padding: 30px 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, .25);
     border-radius: 20px;
@@ -2337,8 +2218,8 @@ background-color: #001b33;
     flex: 1;
 }
 
-.landing-content .landing-right{
-    width:50%;
+.landing-content .landing-right {
+    width: 50%;
     padding: 50px 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
     border-radius: 20px;
@@ -2346,60 +2227,183 @@ background-color: #001b33;
     flex: 1;
 
 }
-.landing-content .landing-right h2{
+
+.landing-content .landing-right h2 {
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: center;
     padding-bottom: 20px;
 }
-.landing-content .landing-right p{
+
+.landing-content .landing-right p {
     font-size: 1rem;
     text-align: justify;
     padding: 10px 20px
 }
-.landing-content .landing-right .button-register{
+
+.landing-content .landing-right .button-register {
     padding-top: 15vh;
 }
 
-.landing-left img{
+.landing-left img {
     max-width: 100%;
-   
+
 }
-#register-now{
+
+#register-now {
     background-color: #001b33;
     padding: 20px 100px;
 }
-.register-in h1{
+
+.register-in h1 {
     color: #fff;
 }
-.register-in .form-check-label{
+
+.register-in .form-check-label {
     color: #fff;
     padding-right: 10px;
     padding-bottom: 20px;
 }
-.register-in p{
+
+.register-in p {
     color: #fff;
 }
 
-.register-in .submit-btn{
+.register-in .submit-btn {
     width: 120px;
 }
-.register-in .register-in-btn:hover{
-background-color: red;
-color: #fff;
+
+.register-in .register-in-btn:hover {
+    background-color: red;
+    color: #fff;
 }
 
-html { scroll-behavior: smooth;}
+html {
+    scroll-behavior: smooth;
+}
 
 @media only screen and (max-width:991px) {
-.landing-content{
-    width: 100%;
-    display: flex;
+    .landing-content {
+        width: 100%;
+        display: flex;
         flex-direction: column;
+    }
+
+    .landing-content .landing-left {
+        width: auto;
+    }
+
+    .landing-content .landing-right {
+        width: auto;
+    }
 }
-.landing-content .landing-left{
-    width: auto;
+
+/*--Blog Section--*/
+#blog{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
 }
-.landing-content .landing-right{
-    width: auto;
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.blog-heading span{
+    color: #002546;
+    font-size: 1.8rem;
+}
+.blog-heading h3{
+    color: #004AAD;
+    font-size: 2rem;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 350px;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    border: 1px solid #cacaca;
+    margin: 10px;
+}
+.blog-img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+.blog-img img{
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+
+}
+.blog-text{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    color: #001b33;
+    font-size: .9rem;
+}
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #272727;
+    text-decoration: none;
+    padding-top: 10px;
+}
+.blog-text p{
+    font-size: .9rem;
+    display: -webkit-box; -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.blog-text .title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #272727;
+}
+.blog-text a{
+    color:#002546;
+    text-decoration: none;
+}
+.blog-text a:hover{
+    color:#ff0000;
+    transition: all ease 0.3s;
+}
+
+@media(max-width:1250px){
+    .blog-box{
+        width: 300px;
+    }
+}
+
+@media(max-width:1100px){
+    .blog-box{
+        width: 70%;
+    }
+}
+@media(max-width:550px){
+    .blog-box{
+        width: 100%;
+        margin: 20px 10px;
+    }
+    #blog{
+        padding: 20px;
+    }
 }

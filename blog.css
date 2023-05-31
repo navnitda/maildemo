@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    font-family: poppins;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html { 
+    scroll-behavior: smooth; 
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h3{
+    padding: 10px 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    line-height: 1.8rem;
+}
+#ds-blog{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://www.whiteboardconsultant.com/images/ds-wall.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: auto;
+    display: flex;
+}
+.ds-blog-heading{
+    color: #fff;
+    padding: 50px 10px;
+}
+.ds-blog-heading span{
+    font-size: .9rem;
+    padding-bottom: 10px;
+}
+.ds-blog-heading a{
+    text-decoration: none;
+    color: #fff;
+}
+.blog-content{
+    padding: 30px;
+    text-align: justify;
+}
+.understanding-data span{
+font-size: 1.4rem;
+font-weight: 500;
+}
+
+.intro {
+    padding:0px 30px;
+}
+.understanding-data{
+    padding:0px 30px;
+}
+.job-search{
+    padding:0px 30px;
+}
+.intern{
+    padding:0px 30px;
+}
+.conclusion{
+    padding:0px 30px;
+}
+
+/*-----Table of Content-----*/
+#toc_container {
+    margin: 20px;
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 500;
+    text-align: left;
+}
+
+#toc_container li, #toc_container ol, #toc_container ol li{
+    list-style: outside none none !important;
+}
+@media(max-width: 400px){
+    .ds-blog-heading h1{
+        font-size: 20px;
+    }
+}
