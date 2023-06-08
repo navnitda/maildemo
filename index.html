@@ -32,18 +32,19 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&ampdisplay=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">       
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&ampdisplay=swap" rel="stylesheet">       
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          
     <link rel="icon" type="image/webp" href="images/WBC-logo.webp">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup-next.css">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <script src="https://kit.fontawesome.com/07b0e92a0d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Job Assured Certification Course in Kolkata | Whiteboard Consultants </title>
+    <title>Job Assured Certification Courses in Kolkata | Whiteboard Consultants </title>
     <meta name="description"
         content="100% Job Assured programs for fresh graduates and early professionals in Emerging Technologies. Open Monday-Saturday 11-6 pm, Park Street, Kolkata">
 
@@ -64,6 +65,24 @@
     <!-- End of OG and Twitter Tags -->
 
     <link rel="canonical" href="https://www.whiteboardconsultant.com/">
+    
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '787372502749736');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=787372502749736&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
     <script type="application/ld+json">
         {
@@ -178,6 +197,73 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
+        <!-- PopUp -->
+
+<div class="popup">
+    <div class="contentBox">
+        <div class="close">
+           <!-- <img src="images/close-btn.png" alt="">  -->
+        </div>
+        <div class="imgBox">
+            <img src="images/coming-soon.png" alt="">
+        </div>
+        <div class="content">
+            <div>
+                <h3>If Interested, Please Fill The Form</h3>
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="success.html">
+                <form action="https://formsubmit.co/8f95838397b32cb824100ee965ec92f1" method="POST">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_next" value="https://www.whiteboardconsultant.com/success.html">
+                    <input type="text" placeholder="Full Name" class="popup-input" name="Name" id="name"
+                        required>
+                    <input type="text" placeholder="Email" class="popup-input" name="email" id="email"
+                        required>
+                    <input type="text" placeholder="Phone No." class="popup-input" name="phone" id="phone"
+                        required>
+                    <input type="text" placeholder="Last School Attended" class="popup-input" name="school"
+                        id="school" required>
+                    <p>Interested in:</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="btn1" name="programID" value="BSM">
+                        <label class="form-check-label" for="btn1"> Sports Management </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="btn2" name="programID" value="BSS">
+                        <label class="form-check-label" for="btn2"> Sports Science </label>
+                    </div>
+                    <input type="submit" value="INTERESTED" class="popup-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Auto Display Popup after 2sec-->
+<script>
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');
+    window.onload = function(){
+        setTimeout(function(){
+            popup.style.display = "block"
+
+            //Add some time delay to popup
+    },1000)
+    }
+    close.addEventListener('click',() => {
+        popup.style.display = "none";
+    })
+</script>
+    <!-- End Of PopUp -->
 
     <!-- Navigation Bar -->
     <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
@@ -190,25 +276,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li><a class="active" href="https://whiteboardconsultant.com/index.html">Home</a></li>
+                    <li><a class="active" href="https://www.whiteboardconsultant.com/index.html">Home</a></li>
                     <li><a href="#">Programs <i class="fas fa-caret-down"></i></a> 
                         
                         <ul>
-                            <li><a href="https://whiteboardconsultant.com/data-science.html">Data Science</a></li>
-                            <li><a href="https://whiteboardconsultant.com/cybersecurity.html">Cybersecurity</a></li>
-                            <li><a href="https://whiteboardconsultant.com/iot.html">Embedded Systems</a></li>
-                            <li><a href="https://whiteboardconsultant.com/additive-manufacturing.html">Additive Manufacturing</a></li>
-                            <li><a href="https://whiteboardconsultant.com/investment-banking.html">Investment Banking</a></li>
-                            <li><a href="https://whiteboardconsultant.com/fullstack.html">Full Stack Dvelopment</a></li>
-                            <li><a href="https://whiteboardconsultant.com/digitalmarketing.html">Digital Marketing</a></li>
-                            <li><a href="https://whiteboardconsultant.com/bsm-iism.html">Sports Management</a></li>
-                            <li><a href="https://whiteboardconsultant.com/bss-iism.html">Sports Science</a></li>
+                            <li><a href="https://www.whiteboardconsultant.com/data-science.html">Data Science</a></li>
+                            <li><a href="https://www.whiteboardconsultant.com/cybersecurity.html">Cybersecurity</a></li>
+                            <li><a href="https://www.whiteboardconsultant.com/iot.html">Embedded Systems</a></li>
+                            <li><a href="https://www.whiteboardconsultant.com/additive-manufacturing.html">Additive Manufacturing</a></li>
+                            <li><a href="https://www.whiteboardconsultant.com/investment-banking.html">Investment Banking</a></li>
+                            <li><a href="https://www.whiteboardconsultant.com/fullstack.html">Full Stack Dvelopment</a></li>
+                            <li><a href="https://www.whiteboardconsultant.com/digitalmarketing.html">Digital Marketing</a></li>
+                            <li><a href="https://www.whiteboardconsultant.com/bsm-iism.html">Sports Management</a></li>
+                            <li><a href="https://www.whiteboardconsultant.com/bss-iism.html">Sports Science</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://whiteboardconsultant.com/services.html">Corporate Services</a></li>
-                    <li><a href="https://whiteboardconsultant.com/about.html">About</a></li>
-                    <li><a href="https://whiteboardconsultant.com/contact.html">Contact Us</a></li>
-                    <li><a href="https://whiteboardconsultant.com/blog.html">Articles</a></li>
+                    <li><a href="https://www.whiteboardconsultant.com/services.html">Corporate Services</a></li>
+                    <li><a href="https://www.whiteboardconsultant.com/about.html">About</a></li>
+                    <li><a href="https://www.whiteboardconsultant.com/contact.html">Contact Us</a></li>
+                    <li><a href="https://www.whiteboardconsultant.com/blog.html">Articles</a></li>
                 </ul>
             </div>
         </div>
@@ -562,12 +648,12 @@
         <div class="footer-left">
             <h3>Useful Links</h3>
             <ul class="footer-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="programs.html">PROGRAMS</a></li>
-                <li><a href="#">CORPORATE SERVICES</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-                <li><a href="blog.html">ARTICLES</a></li>
+                <li><a href="https://www.whiteboardconsultant.com/index.html">HOME</a></li>
+                <li><a href="https://www.whiteboardconsultant.com/about.html">ABOUT</a></li>
+                <li><a href="https://www.whiteboardconsultant.com/programs.html">PROGRAMS</a></li>
+                <li><a href="https://www.whiteboardconsultant.com/services.html">CORPORATE SERVICES</a></li>
+                <li><a href="https://www.whiteboardconsultant.com/contact.html">CONTACT US</a></li>
+                <li><a href="https://www.whiteboardconsultant.com/blog.html">ARTICLES</a></li>
             </ul>
         </div>
         <div class="footer-center">
