@@ -357,7 +357,7 @@ nav {
     min-height: 85vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/testimonial.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/testimonial.jpg);
+/*     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/testimonial.jpg); */
     overflow: hidden;
     padding-top: 50px;
 }
