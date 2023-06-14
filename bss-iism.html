@@ -58,6 +58,73 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+        <!-- PopUp -->
+
+        <div class="popup">
+          <div class="contentBox">
+              <div class="close">
+                 <!-- <img src="images/close-btn.png" alt="">  -->
+              </div>
+              <div class="imgBox">
+                  <img src="images/coming-soon.png" alt="">
+              </div>
+              <div class="content">
+                  <div>
+                      <h3>If Interested, Please Fill The Form</h3>
+                      <!-- Honeypot -->
+                      <input type="text" name="_honey" style="display: none;">
+      
+                      <!-- Disable Captcha -->
+                      <input type="hidden" name="_captcha" value="false">
+      
+                      <input type="hidden" name="_next" value="success.html">
+                      <form action="https://formsubmit.co/8f95838397b32cb824100ee965ec92f1" method="POST">
+                          <!-- Honeypot -->
+                          <input type="text" name="_honey" style="display: none;">
+      
+                          <!-- Disable Captcha -->
+                          <input type="hidden" name="_captcha" value="false">
+      
+                          <input type="hidden" name="_next" value="https://www.whiteboardconsultant.com/success.html">
+                          <input type="text" placeholder="Full Name" class="popup-input" name="Name" id="name"
+                              required>
+                          <input type="text" placeholder="Email" class="popup-input" name="email" id="email"
+                              required>
+                          <input type="text" placeholder="Phone No." class="popup-input" name="phone" id="phone"
+                              required>
+                          <input type="text" placeholder="Last School/College Attended" class="popup-input" name="school"
+                              id="school" required>
+                          <p>Interested in:</p>
+                          <div class="form-check">
+                              <input type="radio" class="form-check-input" id="btn1" name="programID" value="BSM">
+                              <label class="form-check-label" for="btn1"> Sports Management </label>
+                          </div>
+                          <div class="form-check">
+                              <input type="radio" class="form-check-input" id="btn2" name="programID" value="BSS">
+                              <label class="form-check-label" for="btn2"> Sports Science </label>
+                          </div>
+                          <input type="submit" value="INTERESTED" class="popup-btn">
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--Auto Display Popup after 2sec-->
+      <script>
+          const popup = document.querySelector('.popup');
+          const close = document.querySelector('.close');
+          window.onload = function(){
+              setTimeout(function(){
+                  popup.style.display = "block"
+      
+                  //Add some time delay to popup
+          },1000)
+          }
+          close.addEventListener('click',() => {
+              popup.style.display = "none";
+          })
+      </script>
+          <!-- End Of PopUp -->
     <!-- Navigation Bar -->
     <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
         <div class="container px-3">
@@ -213,7 +280,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             The Institute offers an internship at the end of the second year of BSS. The internship program provides the students with an opportunity to take a deeper dive into the sporting ecosystem, thus aiding them in understanding the business of sports & helping them grow their network.<br>
-            The institute offers placement assistance at the end of the third year of BSM.
+            The institute offers placement assistance at the end of the third year of BSS.
           </div>
         </div>
       </div>
@@ -243,17 +310,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
-      <!--<div class="accordion-item">
+      </div>
+      <div class="hr-line"></div>
+  </section>
+
+      <!--Master's in Sports Science-->
+      <section id="ug-mss">
+        <h3>Master’s Degree in Sports Science (MSS)<br>Mumbai University</h3>
+    
+        <p>Master’s in Sports Science is a two-year full-time Master’s degree in Sports Science in collaboration with the University of Mumbai & GICED (Garware Institute of Career Education & Development).</p>
+
+        <p>This course will be conducted by the International Institute of Sports Management (IISM) which is a perfect combination of Classroom learning & Practical.</p>
+          
+        <p>The learners get to apply advanced theory in practical projects as you collaborate with our network of industry partners. This will also enhance your professional prospects. The students are offered opportunities to learn & experience from live projects. The institute supports students to work on consultancy projects with sporting organizations & let them pursue their passion for sports science and excel in the profession.</p>
+        <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-            <strong>Subjects Covered - Bachelor’s in Sports Management</strong>
+            <strong>Course Highlights</strong>
           </button>
         </h2>
         <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>Digital Marketing Post Graduate Course is a 5-month program conducted on weekends & weekdays via live instructor-led lectures, OR 228 Hours.
-            </strong>
+            <ul>
+              <li>More than 50% of the entire course delivery is through live practicals</li>
+              <li>Practicals delivery at the best labs, gyms, and training centers in Mumbai</li>
+              <li>Course delivered by medical practitioners, industry experts & top sports scientists</li>
+              <li>Newest career option for sports enthusiasts wanting to make a career in the Science field</li>
+              <li>Course imparted by India’s pioneer institute in Sports Education, IISM</li>
+              <li>Internship & Placement Assistance</li>
+              <li>Field Visits</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -266,7 +354,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </h2>
         <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>Rs. 90,000/- (Ninty Thousand)</strong>
+            <strong>Rs. 731,360/- (Seven Lakh Thirty One Thousand Three Hundred and Sixty Only)</strong>
           </div>
         </div>
       </div>
@@ -279,7 +367,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </h2>
         <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            Recent Graduates With 0-2 Years of Experience
+            <ul>
+              <li>Degrees held in Life Sciences or Biological Sciences, MBBS, BDS, BHMS, BAMS, and any allied paramedical fields, BPED and MPED degrees, and a Bachelor’s degree in Sports Science.</li>
+              <li>A minimum of 50% in their final Degree scores for candidates of the General Category, and 45% for those candidates from the Reserved Category bearing a Maharashtra Domicile.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -287,20 +378,151 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-            <strong>Certification</strong>
+            <strong>Course Content</strong>
           </button>
         </h2>
         <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            PGP Certification from Imarticus Learning. <br>
-            Also, earn <strong>Most sought after Digital Marketing Certifications from GOOGLE and HUBSPOT</strong>
+            <spam><strong>Semster 1:</strong></spam>
+            <ul>
+              <li>Research Methodology in Sports Science</li>
+              <li>Human Anatomy</li>
+              <li>Fundamental Biomechanics</li>
+              <li>Human Physiology 1</li>
+              <li>Foundation of Strength Condition & Analysis 1</li>
+              <li>Sports Injury & Rehabilitation</li>
+              <li>Exercise Psychology</li>
+              <li>Exercise Science</li>
+            </ul>
+            <br>
+            <span><strong>Semster 2:</strong></span>
+            <ul>
+              <li>Advanced Statistics and Scientific Data Processing</li>
+              <li>Kinesiology</li>
+              <li>Human Physiology 2</li>
+              <li>Motor & Muscle Testing</li>
+              <li>Sports Medicine</li>
+              <li>Basics of Bio Chemistry</li>
+              <li>Health & Exercise Physiology</li>
+              <li>Sports Nutrition</li>
+            </ul>
+            <br>
+            <span><strong>Semster 3:</strong></span>
+            <ul>
+              <li>Musculoskeletal Biomechanics 1</li>
+              <li>Performance Analysis & Player Monitoring</li>
+              <li>Fundamentals of Sports Training</li>
+              <li>Application of Biomechanics</li>
+              <li>Biomechanics System</li>
+              <li>Introduction of Neuro-Mechanics</li>
+              <li>Strength & Conditioning Analysis 2</li>
+              <li>Sports Technology</li>
+              <li>Internship</li>
+            </ul>
+            <br>
+            <span><strong>Semster 4:</strong></span>
+            <ul>
+              <li>Musculoskeletal Biomechanics 2</li>
+              <li>Application of Biomechanics to Physiological Systems</li>
+              <li>Sports Physiotherapy</li>
+              <li>Sports Psychology</li>
+              <li>Exercise Testing</li>
+              <li>Exercise Programming & Practices</li>
+              <li>Dissertation</li>
+            </ul>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
-
+    <div class="hr-line"></div>
   </section>
+    <!--Admission process Sports Science-->
 
+  <section id="ug-ass">
+    <h3>Admissions at IISM</h3>
+    <p>
+      IISM is India’s first of its kind & pioneer in Sports Science Education. We aim at providing a deeper
+      perspective to the ideas and practice of management to the students.</p>
+
+    <p>The stringent admission process at IISM aids in thorough scrutiny. The process has been specifically designed to
+      accommodate students who can be transformed into astute thought leaders, ready to take on the challenges of the
+      sports corporate world, both in India and abroad.</p>
+
+    <p>The admission process comprises of 2 stages that facilitates in understanding the candidate’s liking & awareness
+      towards the sports industry & their acumen for the business side of sports.
+    </p>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+            <strong>Admission Process for Sports Science Degrees</strong>
+          </button>
+        </h2>
+        <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>International Institute of Sports Science follows a Holistic Admission Process in order to admit
+            students in the Sports Science programs. This admission process is to assess an aspirant on various
+            parameters giving him/her a fair opportunity to showcase their competence. Through this process, IISM
+            intends to select students who have the right potential, attitude and aptitude for the Sports Science
+            Industry. In accordance with the eligibility guidelines, an aspirant has to go through two stages to be securing admission at IISM.</p>
+            <p style="font-style: italic;">
+            The Admission Process at IISM comprises of Stage I and Stage II
+            </p>
+            <p><strong>Stage I:</strong></p>
+            <ul>
+              <li>Stage I of the Admission Process for <strong>Master’s Degree</strong> at IISM complete in two steps:
+              </li>
+                  <ol>
+                    <li>Caselets</li><br>
+                    <p> For MSS is the first step in Stage I of the Admission Process. Here, an
+                    aspirant would receive 4 topics over an email. Each topic holds 20 marks for itself. Aspirants will be
+                    given two days to submit their Caselets back on the email Id: caselets@iismworld.in . Caselets comprise
+                    a total of 80 marks and would be evaluated by an expert invigilator.</p>
+                    <p>The <strong>Caselets</strong> are designed to extract and evaluate the best of knowledge of the aspirant. It consists
+                    of cases- that will give a fair idea on how aspirants think, their outlook towards circumstances,
+                    knowledge on current affairs and proficiency in making Plan of Action.
+                    <br>
+                    Through Caselets, we intend to estimate how would aspirants react to or take an action on situations
+                    that he’d face in the rapidly evolving Sports Management sector. The test is specially designed for the
+                    students from any educational and geographical background, who have keen interest in sports and have
+                    desire to make a career in sports management. This exam is conducted online & candidates will have to
+                    appear for this round from home.</p>
+                    <li>SSAT & Overall Performance</li>
+                  <p>The Overall Performance considers the Academic score, Sports Achievements & Extra-curricular Activities
+                  for 20 marks.
+                  </p>
+                </ol>
+              <li>
+                Stage 1 of the Admission Process for <strong>Bachelor’s Degree</strong> at IISM complete in two steps:
+                <ol>
+                  <li>Essay</li>
+                  <p>
+                    <strong>Essay (for BSS)</strong> in Stage I is a step wherein aspirants will have to share an Essay on a particular topic
+                    given. This consist of 80 marks.
+                    Aspirants will be given two days to submit their essay on the email Id: essay@iismworld.in
+                    This will be evaluated by an expert invigilator.</p>
+                  <li>SSAT & Overall Performance</li>
+                </ol>
+              </li>
+            </ul>
+            <br>
+            <p><strong>Stage II</strong></p>
+            <p>This Stage will be an online, Video-Call based, <strong>Personal Interview</strong> for 120 marks.
+            <br>
+            The <strong>total weightage</strong> of <strong>Stage I and Stage II will be 300.</strong>  Aspirants needs to score 60% cumulative of Stage I and Stage II in order to secure Admission at IISM.
+            <br>
+            The final offer letter will be reflected on the candidate’s dashboard.
+            <br>
+            Each candidate having passed Stage I & Stage II will be given one week to pay their fees and confirm their Admission at IISM.</p>
+          </div>
+          <div class="sm-img">
+            <img src="images/ssat.jpeg" alt="About SMAT">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -353,7 +575,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
 
         <hr class="hr">
-        <p class="copyright">Whiteboard Consultants © 2023. All Rights Reserved.</p>
+    <div class="copyright">
+      <p>Whiteboard Consultants © 2023. All Rights Reserved.</p>
+      <div class="copyright-p">
+        <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+      </div>
+    </div>
     </footer>
     <!-- END OF FOOTER -->
 

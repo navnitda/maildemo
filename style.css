@@ -6,14 +6,9 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
-/* body{
-    min-height: 100hv;
-    background: rgba(0, 52, 104, 0.4);
-    width: 100%;
-} */
 /*--Popup--*/
 .popup{
-    background: rgba(0, 52, 104, 0.4);
+    background: rgba(0, 52, 104, 0.6);
     width: 100%;
     height: 100%;
     position: fixed !important;
@@ -123,18 +118,83 @@ body {
     z-index: 10;
 }
 @media (max-width: 791px) {
-    .contentBox{
-        width: 400px;
-        height: auto;
-        margin-top: 20px;
+    .popup {
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        width: 90%;
+        /* padding: 10px; */
+    }
 
+    .contentBox {
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
         flex-direction: column;
     }
-    .contentBox .imgBox img{
+
+    .contentBox .imgBox {
+        height: auto;
+        width: 100%;
+        padding-top: 45px;
         padding-right: 20px;
+
     }
-    
+
+    .content {
+        width: 90%;
+        /* padding-left: 30px !important; */
+    }
+
+    .popup form {
+        width: 70%;
+    }
+
+    .close {
+        width: 10px;
+        height: 10px;
+        background-size: 15px;
+    }
 }
+
+@media (max-width: 375px) {
+    .popup {
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        width: 100%;
+        height: 90%;
+        /* padding: 10px; */
+    }
+    .contentBox {
+        width: 90%;
+        height: 100%;
+        margin-top: 7px;
+        flex-direction: column;
+    }
+    .contentBox .imgBox {
+        height: auto;
+        width: 100%;
+        padding-top: 35px;
+    }
+
+    .contentBox .content {
+        padding-top: 2px;
+    }
+
+    .popup-input {
+        width: 100%;
+        height: 20px;
+        margin-bottom: 3px;
+    }
+
+    .popup-btn {
+        height: 20px;
+        width: 100%;
+    }
+
+}
+
 /*---End of PopUp--*/
 
 /*-------Navigation Bar---------*/
@@ -180,7 +240,7 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     display: block;
     padding-left: 40px;
     text-transform: uppercase;
@@ -487,7 +547,7 @@ nav {
     min-height: 85vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/testimonial.webp);
-/*     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/testimonial.jpg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/testimonial.jpg);
     overflow: hidden;
     padding-top: 50px;
 }
@@ -815,9 +875,8 @@ nav {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px;
+    font-size: 14px;
     padding: 120px 50px 60px 50px;
-    /* padding-top: 80px; */
 }
 
 .footer-distributed .footer-left,
@@ -829,13 +888,15 @@ nav {
 
 /*------FOOTER LEFT--------*/
 .footer-distributed .footer-left {
-    width: 30%;
+    width: 33.3%;
 
 }
 
 .footer-distributed h3 {
     color: #fff;
     margin: 0;
+    font-size: 1.3rem;
+	
 }
 
 .footer-distributed .footer-links li {
@@ -860,7 +921,7 @@ nav {
 /*---FOOTER CENTER------*/
 
 .footer-distributed .footer-center {
-    width: 35%;
+    width: 33.3%;
 }
 
 .footer-distributed .footer-center i {
@@ -906,9 +967,6 @@ nav {
 .footer-distributed .footer-icons {
     margin-top: 10px;
     text-align: left;
-    /* cursor: pointer;
-    font-size: 38px;
-    color: #fff; */
 }
 
 .footer-distributed .footer-icons a {
@@ -944,7 +1002,6 @@ nav {
     width: 100%;
     border: 0;
     border-bottom: 1px solid #ccc;
-    /* margin: 20px auto; */
 }
 
 .footer-distributed p {
@@ -953,10 +1010,26 @@ nav {
     text-align: center;
     margin-bottom: -30px;
 }
-
+.copyright{
+    color: #ffffff;
+}
+.copyright-p{
+    display: flex;
+    flex-direction: row;
+}
+.copyright-p a{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 @media (max-width: 991px) and (min-width:300px) {
+    .footer-distributed{
+        padding: 50px 30px 30px 30px;
+    }
 
+    .footer-distributed h3 {
+    font-size: 1.1rem;
+}
     .footer-distributed .footer-links,
     .footer-distributed .footer-center,
     .footer-distributed .footer-right {
@@ -977,7 +1050,19 @@ nav {
     .footer-distributed p {
         margin-bottom: -40px;
     }
-
+    .copyright{
+        padding-top: 0;
+       text-align: center;
+    margin-top: 40px;
+    font-size: 12px; 
+    }
+.copyright-p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+}
 }
 
 /*-----------END OF HOMEPAGE---------*/
@@ -1027,9 +1112,14 @@ nav {
 
 @media (max-width: 991px) and (min-width:300px) {
     #partners p {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+    #services p{
+        text-align: justify;
         padding-left: 20px;
         padding-right: 20px;
-        font-size: 14px;
     }
 }
 
@@ -1061,12 +1151,29 @@ nav {
     padding-bottom: 10px;
 }
 
+#services h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    color: white !important;
+    padding-bottom: 10px;
+}
+
 #services h1::after {
     content: '';
     background: white;
     display: block;
     height: 3px;
     width: 260px;
+    margin: 10px auto 5px
+}
+
+#services h2::after {
+    content: '';
+    background: white;
+    display: block;
+    height: 3px;
+    width: 360px;
     margin: 10px auto 5px
 }
 
@@ -1091,15 +1198,6 @@ nav {
     font-size: x-large;
 }
 
-/* #services h3::after {
-    content: '';
-    background: white;
-    display: block;
-    height: 3px;
-    width: 600px;
-    margin: 10px auto 5px
-} */
-
 .services {
     margin-top: 40px;
 }
@@ -1118,7 +1216,8 @@ nav {
     margin-top: 20px;
     color: #ccc;
     margin-left: 10px;
-    margin-right: 10px
+    margin-right: 10px;
+    text-align: justify;
 }
 
 #services p a {
@@ -1592,18 +1691,85 @@ font-weight: bold;
 
 #ug-sm h3 {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
 
 }
 
 #ug-sm p {
     text-align: justify;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 60px;
     padding-right: 60px;
-    font-weight: 500;
+    font-size: 16px;
+    /* font-weight: 500; */
+}
+#ug-sm .hr-line {
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 90%;
+    border: 0;
+    border-bottom: 3px solid #7e7e7e98;
 }
 
+#ug-msm {
+    padding-bottom: 40px;
+}
+
+#ug-msm h3 {
+    text-align: center;
+    /* padding-top: 50px; */
+
+}
+
+#ug-msm p {
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* font-weight: 500; */
+}
+#ug-msm .hr-line {
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 90%;
+    border: 0;
+    border-bottom: 3px solid #7e7e7e98;
+}
+
+#ug-asm {
+    padding-bottom: 40px;
+}
+
+#ug-asm h3 {
+    text-align: center;
+    /* padding-top: 50px; */
+
+}
+#ug-asm .accordion-body p{
+font-size: 16px;
+}
+#ug-asm p {
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* font-weight: 500; */
+}
+#ug-asm .hr-line {
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 90%;
+    border: 0;
+    border-bottom: 3px solid #7e7e7e98;
+}
+#ug-asm .sm-img{
+    align-items: center;
+}
+#ug-asm .sm-img img{
+    width: 900px;
+    margin-left: 200px;
+
+}
 /*-----END OF SPORTS MANAGEMENT------*/
 
 
@@ -1643,10 +1809,66 @@ font-weight: bold;
 
 #ug-ss p {
     text-align: justify;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 60px;
     padding-right: 60px;
-    font-weight: 500;
+    /* font-weight: 500; */
+}
+#ug-ss .hr-line {
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 90%;
+    border: 0;
+    border-bottom: 3px solid #7e7e7e98;
+}
+#ug-msm {
+    padding-bottom: 40px;
+}
+
+#ug-mss h3 {
+    text-align: center;
+    /* padding-top: 50px; */
+
+}
+
+#ug-mss p {
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* font-weight: 500; */
+}
+#ug-mss .hr-line {
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 90%;
+    border: 0;
+    border-bottom: 3px solid #7e7e7e98;
+}
+
+#ug-ass {
+    padding-bottom: 40px;
+}
+
+#ug-ass h3 {
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+#ug-ass p {
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* font-weight: 500; */
+}
+#ug-ass .hr-line {
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 90%;
+    border: 0;
+    border-bottom: 3px solid #7e7e7e98;
 }
 
 /*-----END OF SPORTS SCIECNE------*/
@@ -1655,7 +1877,7 @@ font-weight: bold;
 
 /*--------MEDIA QUERIES FOR PROGRAMS--------*/
 
-@media (max-width: 991px) and (min-width:300px) {
+@media (max-width: 991px) and (min-width:280px) {
     #flex-container .card {
         margin-left: 15px;
         margin-right: 10px;
@@ -1672,7 +1894,9 @@ font-weight: bold;
         padding-bottom: 10px;
         color: #000a0f !important;
     }
-
+    .cardtext h3{
+        font-size: 16px;
+    }
     #accordionExample {
         margin-left: 40px;
         margin-right: 40px;
@@ -1703,6 +1927,7 @@ font-weight: bold;
 
     #pg-ds h3 {
         font-size: 18px;
+        margin-top: 50px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1733,9 +1958,10 @@ font-weight: bold;
     }
 
     #pg-cs h3 {
-        padding-right: 50px;
-        padding-left: 20px;
         font-size: 18px;
+        margin-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #pg-cs p {
@@ -1845,7 +2071,7 @@ font-weight: bold;
     }
 
     /*------------IISM SPORTS MANAGEMENT---------*/
-
+    
     #iism-sec {
         height: 30vh;
     }
@@ -1858,18 +2084,63 @@ font-weight: bold;
     }
 
     #ug-sm h3 {
-        padding-top: 120px;
-        word-wrap: break-word;
-        padding-right: 30px;
-        padding-left: 20px;
+        font-size: 18px;
+        margin-top: 140px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #ug-sm p {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
         font-size: 14px;
     }
+    #ug-sm .hr-line{
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+    #ug-msm h3 {
+        font-size: 18px;
+        /* margin-top: 140px; */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #ug-msm p{
+        font-size: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #ug-msm .hr-line{
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+    #ug-asm .accordion-body p{
+    font-size: 14px;
+}
+    #ug-asm p{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+    #ug-asm ul li{
+        font-size: 14px;
 
+}
+    #ug-asm h3 {
+        font-size: 18px;
+        /* margin-top: 140px; */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #ug-asm .hr-line{
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+    #ug-asm .sm-img img{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 30px;
+        padding-right: 20px;
+    }
     /*------------IISM SPORTS SCIENCE---------*/
 
     #bss-sec {
@@ -1884,18 +2155,61 @@ font-weight: bold;
     }
 
     #ug-ss h3 {
-        padding-top: 120px;
-        word-wrap: break-word;
-        padding-right: 30px;
-        padding-left: 20px;
+        font-size: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #ug-ss p {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
         font-size: 14px;
     }
-
+    #ug-ss .hr-line{
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+    #ug-mss h3 {
+        font-size: 18px;
+        /* margin-top: 140px; */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #ug-mss p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #ug-mss .hr-line{
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+    #ug-ass .accordion-body p{
+        font-size: 14px;
+    }
+    #ug-ass p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #ug-ass ul li{
+            font-size: 14px;
+    
+    }
+    #ug-ass h3 {
+        font-size: 18px;
+        /* margin-top: 140px; */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #ug-ass .hr-line{
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+    #ug-ass .sm-img img{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 30px;
+        padding-right: 20px;
+    }
 }
 
 /*--------ABOUT US PAGE---------*/
@@ -2536,4 +2850,14 @@ html {
     #blog{
         padding: 20px;
     }
+}
+.privacy{
+    padding: 20px 30px;
+}
+.privacy h1{
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+.privacy p{
+    text-align: justify;
 }
