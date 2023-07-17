@@ -95,3 +95,367 @@ font-weight: 500;
         font-size: 20px;
     }
 }
+
+/*------Cybersecurity Blog------*/
+#cs-blog{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(https://www.whiteboardconsultant.com/images/Cyber-wall.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: auto;
+    display: flex;
+}
+#cs-main{
+    text-align: justify;
+    padding:40px;
+}
+.toc_container p{
+    padding-left: 0;
+}
+#cs-main h4{
+    font-size: 22px;
+    padding-left: 30px;
+}
+#cs-main h5{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+/* #cs-main p{
+    padding-left: 30px;
+} */
+#cs-main ol{
+    padding-left: 60px;
+}
+/* #cs-career ol li{
+    font-size: 18px;
+    font-weight: 600;
+
+} */
+.cs-blog-heading{
+    color: #fff;
+    padding: 50px 10px;
+}
+.cs-blog-heading span{
+    font-size: .9rem;
+    padding-bottom: 10px;
+}
+.cs-blog-heading a{
+    text-decoration: none;
+    color: #fff;
+}
+.blog-content{
+    padding: 30px;
+    text-align: justify;
+}
+/* .understanding-cs span{
+font-size: 1.4rem;
+font-weight: 500;
+} */
+
+@media (max-width: 991px) and (min-width:300px){
+#cs-main h3,h4,p{
+   padding-left: 20px !important; 
+}
+#cs-main h4{
+    font-size: 18px;
+}
+#cs-main ol,ul{
+    padding-left: 20px;
+}
+.understanding-cs{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+#cs-main h3, h4, li{
+    text-align: left;
+}
+}
+
+
+/*------End of Cybersecurity Blog------*/
+
+/*-------IISM SMAT Blog---------*/
+
+#iism-blog{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(images/iism-sports.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: auto;
+    display: flex;
+}
+.iism-blog-heading{
+    padding: 50px 10px;
+    color: #ffffff;
+}
+.iism-blog-heading span{
+    font-size: .9rem;
+    padding-bottom: 10px;
+}
+.iism-blog-heading span a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.iism-right .iism-icons a{
+    color: #fff;
+    font-size: 25px;}
+
+
+/*-----Table of Content-----*/
+#toc_container {
+    margin: 20px;
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+.toc_title {
+    font-weight: 500;
+    text-align: left;
+}
+
+#toc_container li, #toc_container ol, #toc_container ol li{
+    list-style: outside none none !important;
+}
+.blog-content{
+    padding-left: 40px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+.smat {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th {
+  border: 1px solid #343434dd;
+  text-align: left;
+  padding: 8px;
+  font-style: bold; 
+}
+td{
+  border: 1px solid #343434dd;
+  text-align: left;
+  padding: 8px;  
+}
+tr:last-child {
+    background-color: #d3d3d3;
+  }
+
+
+.accordion-item {
+    background-color: #fff;
+}
+
+.accordion-button {
+    background-color: #ececec;
+
+}
+.iism-conclusion{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+/*------CONTACT US------*/
+
+.contact-blog {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-in-blog {
+    padding: 40px 30px;
+    color: #fff;
+}
+
+.contact-in-blog:nth-child(1) {
+    flex: 50%;
+    background-image: url(images/contact.webp);
+    color: #fff;
+}
+
+/* .contact-in-blog:nth-child(2) {
+    flex: 45%;
+    background: #001b33;
+} */
+
+.contact-in-blog:nth-child(2) {
+    flex: 45%;
+    background: #001b33;
+    height: auto;
+}
+
+.contact-in-blog h1 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-in-blog h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contact-in-blog h2 i {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 15px;
+    background: #f5f5f5;
+    color: #000;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.contact-in-blog p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-in-blog a {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-in-blog a:hover {
+    color: red;
+}
+
+.contact-in-blog h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.contact-in-blog ul {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-in-blog ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.contact-in-blog ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.contact-in-blog ul li :hover {
+    color: red;
+    cursor: pointer;
+}
+
+.contact-in-blog ul li a i {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+.contact-in-blog form {
+    width: 100%;
+    height: auto;
+}
+
+.contact-in-blog-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    outline: none;
+    padding-left: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-blog-input::placeholder {
+    color: #fff;
+}
+
+.contact-in-blog-textarea {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-blog-textarea::placeholder {
+    color: #fff;
+}
+
+
+
+.contact-in-blog-btn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.contact-in-blog iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 991px) and (min-width:300px) {
+    
+    .contact-in-blog:nth-child(1) {
+        flex: 50%;
+    }
+
+    .contact-in-blog:nth-child(2) {
+        flex: 100%;
+        height: 30vh;
+
+    }
+}
+/* @media only screen and (max-width:360px) {
+    .contact-in-blog:nth-child(1) {
+        flex: 50%;
+    }
+
+    .contact-in-blog:nth-child(2) {
+        flex: 100%;
+    }
+
+} */
