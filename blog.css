@@ -107,31 +107,24 @@ font-weight: 500;
 }
 #cs-main{
     text-align: justify;
-    padding:40px;
+    padding: 40px;
 }
 .toc_container p{
     padding-left: 0;
 }
 #cs-main h4{
     font-size: 22px;
-    padding-left: 30px;
 }
 #cs-main h5{
     font-size: 20px;
     padding-left: 30px;
     padding-top: 15px;
 }
-/* #cs-main p{
-    padding-left: 30px;
-} */
+
 #cs-main ol{
     padding-left: 60px;
 }
-/* #cs-career ol li{
-    font-size: 18px;
-    font-weight: 600;
 
-} */
 .cs-blog-heading{
     color: #fff;
     padding: 50px 10px;
@@ -148,10 +141,7 @@ font-weight: 500;
     padding: 30px;
     text-align: justify;
 }
-/* .understanding-cs span{
-font-size: 1.4rem;
-font-weight: 500;
-} */
+
 
 @media (max-width: 991px) and (min-width:300px){
 #cs-main h3,h4,p{
